@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Warstorm</title>
+
+    <!-- Link CSS Files -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- Link jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div id="grid">
+      <!-- Login Status -->
+      <div id="login-status"></div>
+
+      <!-- SignUp Form -->
+      <form id="signUp">
+        <label for="email">email:</label>
+        <input type="email" id="signUp-email" name="email" />
+        <label for="password">password:</label>
+        <input type="password" id="signUp-password" name="password" />
+        <button type="submit">Submit</button>
+      </form>
+
+      <!-- SignIn Form -->
+      <form id="signIn">
+        <label for="email">email:</label>
+        <input type="email" id="signIn-email" name="email" />
+        <label for="password">password:</label>
+        <input type="password" id="signIn-password" name="password" />
+        <button type="submit">Submit</button>
+      </form>
+
+      <!-- Logout -->
+      <form id="logout">
+        <button type="submit">Logout</button>
+      </form>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBVfqKnJePjw3OYO7nVQZh2SCLqkGuvRYc",
+        authDomain: "warstorm-d21e6.firebaseapp.com",
+        databaseURL: "https://warstorm-d21e6.firebaseio.com",
+        projectId: "warstorm-d21e6",
+        storageBucket: "",
+        messagingSenderId: "803522428945",
+        appId: "1:803522428945:web:9fee36b4241d5092"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!-- Link JS Files -->
+    <script src="js/database.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/card.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
