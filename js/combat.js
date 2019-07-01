@@ -1,6 +1,16 @@
-// Determine who goes first
+// Global Variables
+let activePlayer;
+let gameOver = false;
 
-// Take first player's turrn
+// Determine who goes first
+if (Math.round(Math.random())) {
+    activePlayer = "player1";
+} else {
+    activePlayer = 'player2';
+}
+
+// Take first player's turn
+do {
 
 // Draw card from library
 
@@ -13,3 +23,4 @@
 // Loop through switching active player
 
 // Exit on victory
+} while (!gameOver)
