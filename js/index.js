@@ -27,7 +27,6 @@ $("#signIn").submit(function(event) {
     .val()
     .trim();
 
-  // Log into account
   login(email, password);
 });
 
@@ -54,7 +53,7 @@ $("#logout").submit(function(event) {
       // User logged out
     })
     .catch(function(error) {
-      alert("error - check console log");
+      alert("error logging out");
       console.log(error);
     });
 });
@@ -72,5 +71,3 @@ $("#collection").submit(function(e) {
     console.log(error);
   })
 })
-
-// TESTING =================================================================================

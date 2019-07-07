@@ -1,0 +1,71 @@
+#grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: 
+        "title title"
+        "deck-viewer peek";
+    gap: 10px;
+}
+
+#title {
+    grid-area: title;
+    border: 10px solid red;
+    font-size: 60px;
+    text-align: center;
+    text-justify: center;
+}
+
+#deck-viewer {
+    grid-area: deck-viewer;
+    border: 10px solid blue;
+}
+
+#peek {
+    grid-area: peek;
+    border: 10px solid green;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "lane1"
+        "lane2"
+        "lane3"
+        "lane4";
+    gap: 30px;
+    padding: 10px;
+}
+
+#lane1 {
+    grid-area: lane1;
+}
+
+#lane2 {
+    grid-area: lane2;
+}
+
+#lane3 {
+    grid-area: lane3;
+}
+
+#lane4 {
+    grid-area: lane4;
+}
+
+#lane1, #lane2, #lane3, #lane4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.card {
+    width: 75px;
+    height: 105px;
+    border: 10px solid purple;
+}
+
+#hero {
+    width: 82.5px;
+    height: 115.5px;
+    border-color: gold;
+}
