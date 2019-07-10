@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Card Catalog</title>
+
+    <!-- Link jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="grid">
+      <h1>Card Catalog</h1>
+      <div id="display-area"></div>
+    </div>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBVfqKnJePjw3OYO7nVQZh2SCLqkGuvRYc",
+        authDomain: "warstorm-d21e6.firebaseapp.com",
+        databaseURL: "https://warstorm-d21e6.firebaseio.com",
+        projectId: "warstorm-d21e6",
+        storageBucket: "",
+        messagingSenderId: "803522428945",
+        appId: "1:803522428945:web:9fee36b4241d5092"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!-- Link JS Files -->
+    <script src="js/database.js"></script>
+    <script src="js/card-catalog.js"></script>
+  </body>
+</html>

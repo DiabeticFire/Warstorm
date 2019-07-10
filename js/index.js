@@ -57,17 +57,3 @@ $("#logout").submit(function(event) {
       console.log(error);
     });
 });
-
-$("#collection").submit(function(e) {
-  e.preventDefault();
-
-  let cardDB = db.collection("cards").get().then(function(querySnapshot) {
-    querySnapshot.forEach(doc => {
-      let card  = $("<img>");
-      card.attr("src", doc.data().link)
-      $("#collection-area").append(card);
-    });
-  }).catch(function(error) {
-    console.log(error);
-  })
-})

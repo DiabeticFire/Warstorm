@@ -1,2 +1,3 @@
 # Warstorm
-A recreation of Warstorm
+
+A spiritual successor of Warstorm
